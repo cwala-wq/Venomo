@@ -1,108 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Venmo Customer Support</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-    body {
-      background-color: #ffffff;
-      padding: 20px;
-    }
-    .container {
-      max-width: 600px;
-      margin: 0 auto;
-      text-align: center;
-    }
-    .logo {
-      font-size: 32px;
-      font-weight: bold;
-      color: #3d95ce;
-      margin-bottom: 10px;
-    }
-    .heading {
-      font-size: 22px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    .subheading {
-      font-size: 16px;
-      color: #333;
-      margin-bottom: 20px;
-    }
-    .call-button {
-      background-color: #003cff;
-      color: white;
-      font-size: 20px;
-      font-weight: bold;
-      padding: 15px;
-      border-radius: 8px;
-      text-decoration: none;
-      display: inline-block;
-      margin-bottom: 25px;
-      width: 100%;
-    }
-    .call-button:hover {
-      background-color: #0022aa;
-    }
-    .section {
-      text-align: left;
-      margin-bottom: 20px;
-      font-size: 15px;
-      line-height: 1.8;
-      color: #111;
-    }
-    .footer-button {
-      background-color: #003cff;
-      color: white;
-      padding: 15px;
-      font-weight: bold;
-      text-decoration: none;
-      display: block;
-      border-radius: 8px;
-      margin-top: 20px;
-    }
-    .footer {
-      text-align: center;
-      font-size: 14px;
-      margin-top: 30px;
-      color: #666;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activate Your TV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fdf8ec;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .tv-image {
+            margin-top: 20px;
+        }
+
+        .tv-image img {
+            width: 100%;
+            max-width: 300px;
+        }
+
+        h2 {
+            margin-top: 20px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 90%;
+            max-width: 350px;
+            padding: 15px;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 12px 25px;
+            margin-top: 15px;
+            border: 1px solid #000;
+            background-color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .step {
+            width: 45%;
+            min-width: 130px;
+            margin: 10px;
+        }
+
+        .step h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .step p {
+            font-size: 14px;
+        }
+
+        /* Make sure everything looks good on very small screens */
+        @media (max-width: 400px) {
+            .step {
+                width: 100%;
+            }
+
+            input[type="text"] {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <div class="container">
-    <div class="logo">venmo</div>
-    <div class="heading">Venmo Customer Service</div>
-    <div class="subheading">Resolve Your Query Now</div>
-    <a href="tel:+1-844-607-2206" class="call-button">+1-844-607-2206</a>
-    <div class="section">
-      <p>1. If you're experiencing issues with your Venmo account, our customer support team is here to help you resolve your concerns. Whether you're dealing with payment issues, account problems, or have general inquiries, we're available to assist you.</p>
-      <p>We understand how important it is to have a smooth transaction experience. If you're facing problems such as transaction errors, login issues, or any concerns about your account, our team is here to provide prompt assistance. Venmo customer support is available during business hours, and you can expect quick and helpful responses.</p>
-      <p>We recommend reaching out with as much detail as possible about your issue to speed up the resolution process. If you'd prefer to speak with someone directly, you can call Venmo's customer support at the following number.</p>
+
+    <div class="tv-image">
+        <img src="tss.png" alt="TV Image">
     </div>
-    <div class="section">
-      <p>2. Our customer support team is dedicated to ensuring your experience with Venmo is seamless and hassle-free. Whether it's an urgent issue or a general inquiry, we are here to assist you every step of the way.</p>
-      <p>For further assistance, you can also visit our help center on the official Venmo website for additional resources and FAQs.</p>
+
+    <h2>Please Enter The Code Displayed On Your TV Screen !</h2>
+
+    <input type="text" id="code" placeholder="Enter Your Code"><br>
+    <button onclick="activateCode()">Activate Now</button>
+
+    <div class="steps">
+        <div class="step">
+            <h3>Step 1:</h3>
+            <p>Open And Launch The App</p>
+        </div>
+        <div class="step">
+            <h3>Step 2:</h3>
+            <p>Enter The Code & Register Device</p>
+        </div>
+        <div class="step">
+            <h3>Step 3:</h3>
+            <p>Code Will Appear</p>
+        </div>
+        <div class="step">
+            <h3>Step 4:</h3>
+            <p>Enjoy Streaming</p>
+        </div>
     </div>
-    <a href="tel:+1-844-607-2206" class="footer-button">Call Venmo Support</a>
-    <div class="footer">
-      2024 Venmo® Inc. All rights reserved.
-    </div>
-  </div>
- 
-  <script>
-    window.onload = function() {
-      setTimeout(function() {
-        window.location.href = "tel:+1-844-607-2206";
-      }, 500); // Automatically calls after 0.5 seconds
-    };
-  </script>
+
+    <script>
+        function activateCode() {
+            var code = document.getElementById('code').value;
+            window.location.href = "success.html"; // redirect to success page
+        }
+    </script>
+
 </body>
+
 </html>
